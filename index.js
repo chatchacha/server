@@ -26,8 +26,10 @@ try {
     process.stdout.write('- Starting socket.io... ');
 
     var io = require('socket.io').listen(config.port);
-    io.sockets.on('ready', function () {
-        
+    io.sockets.on('connection', function (socket) {
+        socket.on('message', function (user, message) {
+            io.sockets.emit('message', user, message);
+        });
     });
 } catch (e) {
     handleError(e);
