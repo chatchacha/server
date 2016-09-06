@@ -1,1 +1,2 @@
-require('socket.io').listen(8080);
+var config = require('./config.js');
+require('socket.io').listen(config.port);
