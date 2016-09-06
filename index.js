@@ -27,7 +27,7 @@ try {
 
     var io = require('socket.io').listen(config.port);
     io.sockets.on('ready', function () {
-        console.log('OK'.green);
+        
     });
 } catch (e) {
     handleError(e);
