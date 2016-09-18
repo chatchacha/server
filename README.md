@@ -27,3 +27,6 @@ $ node index.js
 ```
 
 Otherwise, something wrong happened and you might want to open an issue to let me know. :)
+
+## 2. Client
+Please look at the following repository: https://github.com/chatchacha/client
